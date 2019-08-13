@@ -30,6 +30,5 @@ dependencies {
 
     api 'com.qw:soulpermission:1.2.1_x'
     api "android.arch.lifecycle:common-java8:1.1.1"
-    api files('libs/AMap3DMap_6.9.0_AMapNavi_6.8.0_AMapSearch_6.9.0_AMapTrack_1.1.0_AMapLocation_4.6.0_20190530.jar')
 
 }
