@@ -28,12 +28,16 @@ public class SimpleAdapter extends BaseQuickAdapter<SimpleAdapter.SimpleModel, B
         if (item.getIcon() > 0) {
             helper.setImageResource(R.id.iv_simple_icon, item.getIcon());
         }
+        if (item.getIconRight() > 0) {
+            helper.setImageResource(R.id.iv_simple_right, item.getIcon());
+        }
 
     }
 
     public static class SimpleModel {
         private String name;
         private int icon;
+        private int iconRight;
         private String tag;
 
         public String getName() {
@@ -58,6 +62,14 @@ public class SimpleAdapter extends BaseQuickAdapter<SimpleAdapter.SimpleModel, B
 
         public void setTag(String tag) {
             this.tag = tag;
+        }
+
+        public int getIconRight() {
+            return iconRight;
+        }
+
+        public void setIconRight(int iconRight) {
+            this.iconRight = iconRight;
         }
     }
 }
